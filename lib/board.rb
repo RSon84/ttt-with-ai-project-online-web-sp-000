@@ -44,7 +44,7 @@ class Board
    !(taken?(position)) && (0..9).include?(position.to_i - 1)
  end
 
- def update(position, token)
+ def update(position, player)
   #  binding.pry
    @cells[position.to_i - 1] = player.token
    player.token = token

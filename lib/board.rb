@@ -46,8 +46,8 @@ class Board
 
  def update(position, player)
   #  binding.pry
-   @cells[position.to_i - 1] = token
-   player.token = token
+   @cells[position.to_i - 1] = player.token
+  #  player.token = token
 
      end
 end
